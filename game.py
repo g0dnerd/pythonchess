@@ -72,6 +72,9 @@ class boardState:
 
 	# def is_legal(self, move):
 		# TODO: legality detection
+		# does it move into check/discoveries?
+		# can the targeted piece reach the targeted square?
+		# is the castling attempt legal?
 
 	# def is_check(self):
 		# TODO: Logic for check detection
