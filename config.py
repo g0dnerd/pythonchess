@@ -1,2 +1,0 @@
-moveCount = 0
-
