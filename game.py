@@ -70,11 +70,20 @@ class boardState:
 		self.moveCount += 1
 		self.print_board()
 
-	# def is_legal(self, move):
+	def is_legal(self, move):
 		# TODO: legality detection
 		# does it move into check/discoveries?
 		# can the targeted piece reach the targeted square?
 		# is the castling attempt legal?
+		if len(move) == 3:
+			# TODO: exception: promoting e.g. c8Q
+			pieceToMove = move[0]
+			moveToRow = int(move[2])
+			moveToRow -= 1
+			moveToFile = ord(move[0] - 97)
+
+			# try to find the piece that is being moved
+			# if pieceToMove == 'R':
 
 	# def is_check(self):
 		# TODO: Logic for check detection
