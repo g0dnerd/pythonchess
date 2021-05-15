@@ -1,0 +1,2 @@
+moveCount = 0
+
